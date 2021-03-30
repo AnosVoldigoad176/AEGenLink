@@ -22,6 +22,7 @@ public class Main {
     public static void main (String[] args) {
 
         while (true) {
+
             // Define variable
             String domain, anime, extension;
             int episode;
@@ -30,11 +31,10 @@ public class Main {
             System.out.println("AnimeEarth Episode Link Generator");
             System.out.println("By Anos Voldigoad");
             System.out.println("Version 1.0");
-            System.out.println("");
+            System.out.println();
 
             // Handle input
             Scanner input = new Scanner(System.in);
-
             System.out.println("Please input your domain (EXAMPLE: gg.skid.cyou):");
             domain = input.nextLine();
             System.out.println("Please input anime name in the correct case (EXAMPLE: Maou Gakuin no Futekigousha):");
@@ -43,11 +43,14 @@ public class Main {
             episode = Integer.parseInt(input.nextLine());
             System.out.println("Please input video name extension (EXAMPLE: mp4)");
             extension = input.nextLine();
-            System.out.println("");
+            System.out.println();
             System.out.println("Output:");
             System.out.println("Folder name: " + anime.replaceAll("\\s", ""));
             GenLinkEpisode(domain, anime, episode, extension);
-            System.out.println("");
-        }
-    }
-}
+            System.out.println();
+
+        } // End while loop
+
+    } // End main method
+
+} // End Main class
