@@ -33,7 +33,7 @@ public class Main {
             // Header
             System.out.println("AnimeEarth Episode Link Generator");
             System.out.println("By Anos Voldigoad");
-            System.out.println("Version 1.0");
+            System.out.println("Version 1.1");
             System.out.println();
 
             // Handle input
