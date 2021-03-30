@@ -7,9 +7,12 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+@SuppressWarnings({"SpellCheckingInspection", "InfiniteLoopStatement"})
+// Suppress warning for typo and While infinite loop
+
 public class Main {
 
-    public static void GenLinkEpisode (String domain, String anime, int episode, String extension) {
+    public static void GenLinkEpisode(String domain, String anime, int episode, String extension) {
         DecimalFormat df = new DecimalFormat("00");
         for (int i = 1; i <= episode; i++) {
             String finalOutput = "https://" + domain.toLowerCase() + "/" + "Menia" + "/"
