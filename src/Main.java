@@ -1,7 +1,7 @@
 /*
  * Author: Anos Voldigoad
  * Last modified: March 29, 2021
- * Description: Gen link for AnimeEarth episode uploader
+ * Description: Link gen for AnimeEarth episode uploader
  */
 
 import java.text.DecimalFormat;
@@ -12,9 +12,10 @@ public class Main {
     public static void GenLinkEpisode (String domain, String anime, int episode, String extension) {
         DecimalFormat df = new DecimalFormat("00");
         for (int i = 1; i <= episode; i++) {
-            System.out.println("https://" + domain.toLowerCase() + "/" + "Menia" + "/"
+            String finalOutput = "https://" + domain.toLowerCase() + "/" + "Menia" + "/"
                     + anime.replaceAll("\\s", "") + "/" + anime.replaceAll("\\s", "") + "-"
-                    + df.format(i) + "." + extension);
+                    + df.format(i) + "." + extension;
+            System.out.println(finalOutput.replaceAll("\\s", ""));
         }
     }
 

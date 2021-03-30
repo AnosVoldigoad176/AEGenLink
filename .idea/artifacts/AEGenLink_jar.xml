@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AEGenLink:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AEGenLink_jar</output-path>
+    <root id="archive" name="AEGenLink.jar">
+      <element id="module-output" name="AEGenLink" />
+    </root>
+  </artifact>
+</component>
