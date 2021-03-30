@@ -23,7 +23,7 @@ public class Main {
 
         while (true) {
             // Define variable
-            String domain, folder, anime, extension;
+            String domain, anime, extension;
             int episode;
 
             // Header
